@@ -5,7 +5,7 @@ will try to update on time
 
 ## Notes!!!!:
 - MCQ question answers not provided
-- Print functions not included as coursemology read directly from you code
+- Print functions not included as coursemology read directly from your code
 - Do add in the print function to run the code yourself on IDLE
 
 
