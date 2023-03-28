@@ -3,25 +3,16 @@
 #and the code is hidden
 #Enter your code below to calculate the suffix for the vehicle registration number
 
-idk=[]
+VRN=[]
 counter=0
-for i in vehicle_reg_num:
-    if i.isalpha():
-        if counter==2:
-            idk[0]=idk[1]
-            idk[1]=(ord(i)-64)
-        else:
-            idk.append(ord(i)-64)
-            counter+=1
-    elif i.isdigit:
-        if counter==1:
-            idk[1]=idk[0]
-            idk[0]=0
-            counter+=1
-        idk.append(int(i))
+for char in vehicle_reg_number[:3]:
+    VRN.append(ord(char) - 64)
+for char in vehicle_reg_number[3:]:
+    VRN.append(int(char))
+VRN.pop(0)
 total=0
 Arr=[9,4,5,4,3,2]
-for i in range(6):
-    total+=idk[i]*Arr[i]
+for char in range(6):
+    total+=VRN[char]*Arr[char]
 Array=["A","Z","Y","X","U","T","S","R","P","M","L","K","J","H","G","E","D","C","B"]
 suffix=Array[total%19]
