@@ -9,4 +9,3 @@ will try to update on time
 - Do add in the print function to run the code yourself on IDLE
 
 
-note to self: march holi part 2 not done
